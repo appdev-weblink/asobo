@@ -201,7 +201,7 @@ function setMyPosition() {
 // ===== view course map =====
 function viewCourse() {
 	// ポリゴン用ポイントjson取得
-  var json = getJson("golf01.json");
+  var json = getJson("ka01.js");
   base = json.base;
   parts = json.contents;
 	// TEEの位置取得

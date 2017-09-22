@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>view test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<style>
+		body {
+			font-size: 12px;
+		}
+		p {
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<!-- 画面幅 -->
+		<p id="screen_width"></p>
+		<!-- 画面高 -->
+		<p id="screen_height"></p><br>
+		<!-- 有効画面幅 -->
+		<p id="screen_availWidth"></p>
+		<!-- 有効画面高 -->
+		<p id="screen_availHeight"></p><br>
+		<!-- 表示領域幅 -->
+		<p id="window_innerWidth"></p>
+		<!-- 表示領域高 -->
+		<p id="window_innerHeight"></p><br>
+		<!-- ウィンドウ幅 -->
+		<p id="window_outerWidth"></p>
+		<!-- ウィンドウ高 -->
+		<p id="window_outerHeight"></p><br>
+		<!-- 表示領域幅 -->
+		<p id="window_width"></p>
+		<!-- 表示領域高 -->
+		<p id="window_height"></p><br>
+		<!-- 表示領域幅 -->
+		<p id="clientWidth"></p>
+		<!-- 表示領域高 -->
+		<p id="clientHeight"></p><br>
+		<!-- ドキュメント幅 -->
+		<p id="doc_width"></p>
+		<!-- ドキュメント高 -->
+		<p id="doc_height"></p><br>
+	</div>
+	<script>
+		// 参考 http://qiita.com/yaboojp/items/6b63f2b398dce12cd943
+		// 画面幅
+		var screen_width = screen.width;
+		document.getElementById("screen_width").innerHTML ="画面幅 screen.width : " + screen_width;
+		// 画面高
+		var screen_height = screen.height;
+		document.getElementById("screen_height").innerHTML ="画面高 screen.height : " + screen_height;
+		// 有効画面幅
+		var screen_availWidth = screen.availWidth;
+		document.getElementById("screen_availWidth").innerHTML ="有効画面幅 screen.availWidth : " + screen_availWidth;
+		// 有効画面高
+		var screen_availHeight = screen.availHeight;
+		document.getElementById("screen_availHeight").innerHTML ="有効画面高 screen.availHeight : " + screen_availHeight;
+		// 表示領域幅
+		var window_innerWidth = window.innerWidth;
+		document.getElementById("window_innerWidth").innerHTML ="表示領域幅 window.innerWidth : " + window_innerWidth;
+		// 表示領域高
+		var window_innerHeight = window.innerHeight;
+		document.getElementById("window_innerHeight").innerHTML ="表示領域高 window.innerHeight : " + window_innerHeight;
+		// ウィンドウ幅
+		var window_outerWidth = window.outerWidth;
+		document.getElementById("window_outerWidth").innerHTML ="ウィンドウ幅 window.outerWidth : " + window_outerWidth;
+		// ウィンドウ高
+		var window_outerHeight = window.outerHeight;
+		document.getElementById("window_outerHeight").innerHTML ="ウィンドウ高 window.outerHeight : " + window_outerHeight;
+		// 表示領域幅
+		var window_width = $(window).width();
+		document.getElementById("window_width").innerHTML ="表示領域幅 $(window).width() : " + window_width;
+		// 表示領域高
+		var window_height = $(window).height();
+		document.getElementById("window_height").innerHTML ="表示領域高 $(window).height() : " + window_height;
+		// 表示領域幅
+		var clientWidth = document.documentElement.clientWidth;
+		document.getElementById("clientWidth").innerHTML ="表示領域幅 document.documentElement.clientWidth : " + clientWidth;
+		// 表示領域高
+		var clientHeight = document.documentElement.clientHeight;
+		document.getElementById("clientHeight").innerHTML ="表示領域高 document.documentElement.clientHeight : " + clientHeight;
+		// ドキュメント幅
+		var doc_width = $(document).width();
+		document.getElementById("doc_width").innerHTML ="ドキュメント幅 $(document).width() : " + doc_width;
+		// キュメント高
+		var doc_height = $(document).height();
+		document.getElementById("doc_height").innerHTML ="キュメント高 $(document).height() : " + doc_height;
+	</script>
+</body>
+</html>
